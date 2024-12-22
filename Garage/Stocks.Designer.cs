@@ -28,314 +28,503 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Stocks));
-            label10 = new Label();
-            label9 = new Label();
-            label8 = new Label();
-            dataGridView1 = new DataGridView();
-            button3 = new Button();
-            button2 = new Button();
-            button1 = new Button();
-            label5 = new Label();
-            label14 = new Label();
-            label13 = new Label();
-            label12 = new Label();
-            label11 = new Label();
-            label4 = new Label();
-            label1 = new Label();
-            label3 = new Label();
-            label2 = new Label();
-            pictureBox2 = new PictureBox();
-            panel3 = new Panel();
-            panel1 = new Panel();
             pictureBox1 = new PictureBox();
+            panel3 = new Panel();
+            CarDGV = new DataGridView();
+            OwnerNameTb = new TextBox();
+            DeleteBtn = new Button();
+            ColorTb = new TextBox();
+            EditBtn = new Button();
+            CarModelTb = new TextBox();
+            AddBtn = new Button();
+            CarBrandTb = new TextBox();
+            CDate = new DateTimePicker();
+            CarNumTb = new TextBox();
+            label1 = new Label();
+            label2 = new Label();
+            panel1 = new Panel();
+            label3 = new Label();
+            manuButton = new PictureBox();
+            panel5 = new Panel();
+            button2 = new Button();
+            panel6 = new Panel();
+            button3 = new Button();
+            panel7 = new Panel();
+            button4 = new Button();
+            panel8 = new Panel();
+            button5 = new Button();
+            panel9 = new Panel();
+            button6 = new Button();
+            panel10 = new Panel();
+            button7 = new Button();
             panel2 = new Panel();
-            label15 = new Label();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            panel3.SuspendLayout();
-            panel1.SuspendLayout();
+            label8 = new Label();
+            panel4 = new Panel();
+            button1 = new Button();
+            sidebarTimer = new System.Windows.Forms.Timer(components);
+            sidebar = new Panel();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)CarDGV).BeginInit();
+            panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)manuButton).BeginInit();
+            panel5.SuspendLayout();
+            panel6.SuspendLayout();
+            panel7.SuspendLayout();
+            panel8.SuspendLayout();
+            panel9.SuspendLayout();
+            panel10.SuspendLayout();
             panel2.SuspendLayout();
+            panel4.SuspendLayout();
+            sidebar.SuspendLayout();
             SuspendLayout();
             // 
-            // label10
+            // pictureBox1
             // 
-            label10.AutoSize = true;
-            label10.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label10.Location = new Point(69, 201);
-            label10.Name = "label10";
-            label10.Size = new Size(61, 28);
-            label10.TabIndex = 8;
-            label10.Text = "Stock";
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(3, 3);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(40, 43);
+            pictureBox1.TabIndex = 6;
+            pictureBox1.TabStop = false;
             // 
-            // label9
+            // panel3
             // 
-            label9.AutoSize = true;
-            label9.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label9.Location = new Point(102, 90);
-            label9.Name = "label9";
-            label9.Size = new Size(69, 28);
-            label9.TabIndex = 7;
-            label9.Text = "MENU";
+            panel3.Controls.Add(CarDGV);
+            panel3.Controls.Add(OwnerNameTb);
+            panel3.Controls.Add(DeleteBtn);
+            panel3.Controls.Add(ColorTb);
+            panel3.Controls.Add(EditBtn);
+            panel3.Controls.Add(CarModelTb);
+            panel3.Controls.Add(AddBtn);
+            panel3.Controls.Add(CarBrandTb);
+            panel3.Controls.Add(CDate);
+            panel3.Controls.Add(CarNumTb);
+            panel3.Controls.Add(label1);
+            panel3.Controls.Add(label2);
+            panel3.Dock = DockStyle.Fill;
+            panel3.Location = new Point(266, 52);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(1048, 643);
+            panel3.TabIndex = 19;
             // 
-            // label8
+            // CarDGV
             // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label8.ForeColor = Color.White;
-            label8.Location = new Point(69, 9);
-            label8.Name = "label8";
-            label8.Size = new Size(165, 32);
-            label8.TabIndex = 5;
-            label8.Text = "Garage SHAH";
+            CarDGV.BackgroundColor = SystemColors.ControlLight;
+            CarDGV.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            CarDGV.Location = new Point(2, 256);
+            CarDGV.Name = "CarDGV";
+            CarDGV.RowHeadersWidth = 62;
+            CarDGV.Size = new Size(1046, 387);
+            CarDGV.TabIndex = 26;
             // 
-            // dataGridView1
+            // OwnerNameTb
             // 
-            dataGridView1.BackgroundColor = SystemColors.ControlLight;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(0, 232);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.Size = new Size(975, 238);
-            dataGridView1.TabIndex = 14;
+            OwnerNameTb.Location = new Point(447, 131);
+            OwnerNameTb.Name = "OwnerNameTb";
+            OwnerNameTb.Size = new Size(150, 31);
+            OwnerNameTb.TabIndex = 22;
+            OwnerNameTb.Text = "Owner Name";
             // 
-            // button3
+            // DeleteBtn
             // 
-            button3.Location = new Point(424, 114);
-            button3.Name = "button3";
-            button3.Size = new Size(112, 34);
-            button3.TabIndex = 13;
-            button3.Text = "Delete";
-            button3.UseVisualStyleBackColor = true;
+            DeleteBtn.Location = new Point(546, 178);
+            DeleteBtn.Name = "DeleteBtn";
+            DeleteBtn.Size = new Size(112, 34);
+            DeleteBtn.TabIndex = 25;
+            DeleteBtn.Text = "Delete";
+            DeleteBtn.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // ColorTb
             // 
-            button2.Location = new Point(265, 114);
-            button2.Name = "button2";
-            button2.Size = new Size(112, 34);
-            button2.TabIndex = 12;
-            button2.Text = "Edit";
-            button2.UseVisualStyleBackColor = true;
+            ColorTb.Location = new Point(249, 131);
+            ColorTb.Name = "ColorTb";
+            ColorTb.Size = new Size(150, 31);
+            ColorTb.TabIndex = 20;
+            ColorTb.Text = "Color";
             // 
-            // button1
+            // EditBtn
             // 
-            button1.Location = new Point(107, 114);
-            button1.Name = "button1";
-            button1.Size = new Size(112, 34);
-            button1.TabIndex = 11;
-            button1.Text = "Add";
-            button1.UseVisualStyleBackColor = true;
+            EditBtn.Location = new Point(392, 178);
+            EditBtn.Name = "EditBtn";
+            EditBtn.Size = new Size(112, 34);
+            EditBtn.TabIndex = 24;
+            EditBtn.Text = "Edit";
+            EditBtn.UseVisualStyleBackColor = true;
             // 
-            // label5
+            // CarModelTb
             // 
-            label5.AutoSize = true;
-            label5.Location = new Point(474, 58);
-            label5.Name = "label5";
-            label5.Size = new Size(49, 25);
-            label5.TabIndex = 7;
-            label5.Text = "Price";
+            CarModelTb.Location = new Point(447, 70);
+            CarModelTb.Name = "CarModelTb";
+            CarModelTb.Size = new Size(150, 31);
+            CarModelTb.TabIndex = 19;
+            CarModelTb.Text = "Car Model";
             // 
-            // label14
+            // AddBtn
             // 
-            label14.AutoSize = true;
-            label14.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label14.Location = new Point(69, 578);
-            label14.Name = "label14";
-            label14.Size = new Size(77, 28);
-            label14.TabIndex = 12;
-            label14.Text = "Logout";
+            AddBtn.Location = new Point(249, 178);
+            AddBtn.Name = "AddBtn";
+            AddBtn.Size = new Size(112, 34);
+            AddBtn.TabIndex = 23;
+            AddBtn.Text = "Add";
+            AddBtn.UseVisualStyleBackColor = true;
             // 
-            // label13
+            // CarBrandTb
             // 
-            label13.AutoSize = true;
-            label13.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label13.Location = new Point(69, 347);
-            label13.Name = "label13";
-            label13.Size = new Size(68, 28);
-            label13.TabIndex = 11;
-            label13.Text = "Billing";
+            CarBrandTb.Location = new Point(249, 70);
+            CarBrandTb.Name = "CarBrandTb";
+            CarBrandTb.Size = new Size(150, 31);
+            CarBrandTb.TabIndex = 18;
+            CarBrandTb.Text = "Car Brand";
             // 
-            // label12
+            // CDate
             // 
-            label12.AutoSize = true;
-            label12.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label12.Location = new Point(69, 412);
-            label12.Name = "label12";
-            label12.Size = new Size(92, 28);
-            label12.TabIndex = 10;
-            label12.Text = "Analytics";
+            CDate.Location = new Point(679, 70);
+            CDate.Name = "CDate";
+            CDate.Size = new Size(300, 31);
+            CDate.TabIndex = 21;
             // 
-            // label11
+            // CarNumTb
             // 
-            label11.AutoSize = true;
-            label11.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label11.Location = new Point(69, 272);
-            label11.Name = "label11";
-            label11.Size = new Size(110, 28);
-            label11.TabIndex = 9;
-            label11.Text = "Employees";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new Point(265, 58);
-            label4.Name = "label4";
-            label4.Size = new Size(80, 25);
-            label4.TabIndex = 6;
-            label4.Text = "Quantity";
+            CarNumTb.Location = new Point(45, 70);
+            CarNumTb.Name = "CarNumTb";
+            CarNumTb.Size = new Size(150, 31);
+            CarNumTb.TabIndex = 17;
+            CarNumTb.Text = "Cars Number";
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(304, 43);
+            label1.ForeColor = Color.Gray;
+            label1.Location = new Point(7, 221);
             label1.Name = "label1";
             label1.Size = new Size(287, 32);
-            label1.TabIndex = 2;
+            label1.TabIndex = 15;
             label1.Text = "Record Cars for Servicing";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(46, 58);
-            label3.Name = "label3";
-            label3.Size = new Size(89, 25);
-            label3.TabIndex = 5;
-            label3.Text = "PartName";
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.ForeColor = Color.White;
-            label2.Location = new Point(3, 0);
+            label2.ForeColor = Color.Black;
+            label2.Location = new Point(7, 19);
             label2.Name = "label2";
             label2.Size = new Size(187, 32);
-            label2.TabIndex = 4;
+            label2.TabIndex = 16;
             label2.Text = "Car informasjon";
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(12, 9);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(50, 42);
-            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox2.TabIndex = 6;
-            pictureBox2.TabStop = false;
-            // 
-            // panel3
-            // 
-            panel3.BackColor = Color.Gray;
-            panel3.Controls.Add(dataGridView1);
-            panel3.Controls.Add(button3);
-            panel3.Controls.Add(button2);
-            panel3.Controls.Add(button1);
-            panel3.Controls.Add(label5);
-            panel3.Controls.Add(label4);
-            panel3.Controls.Add(label3);
-            panel3.Controls.Add(label2);
-            panel3.Location = new Point(304, 197);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(978, 473);
-            panel3.TabIndex = 3;
             // 
             // panel1
             // 
-            panel1.BackColor = Color.Black;
-            panel1.Controls.Add(panel3);
-            panel1.Controls.Add(label1);
-            panel1.Controls.Add(pictureBox1);
-            panel1.Controls.Add(panel2);
-            panel1.Dock = DockStyle.Fill;
+            panel1.Controls.Add(label3);
+            panel1.Controls.Add(manuButton);
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1314, 695);
-            panel1.TabIndex = 1;
+            panel1.Size = new Size(266, 122);
+            panel1.TabIndex = 19;
             // 
-            // pictureBox1
+            // label3
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(1120, 22);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(162, 169);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 1;
-            pictureBox1.TabStop = false;
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.ForeColor = Color.White;
+            label3.Location = new Point(77, 36);
+            label3.Name = "label3";
+            label3.Size = new Size(68, 30);
+            label3.TabIndex = 1;
+            label3.Text = "Manu";
+            // 
+            // manuButton
+            // 
+            manuButton.Cursor = Cursors.Hand;
+            manuButton.Image = (Image)resources.GetObject("manuButton.Image");
+            manuButton.Location = new Point(12, 26);
+            manuButton.Name = "manuButton";
+            manuButton.Size = new Size(47, 40);
+            manuButton.SizeMode = PictureBoxSizeMode.StretchImage;
+            manuButton.TabIndex = 0;
+            manuButton.TabStop = false;
+            // 
+            // panel5
+            // 
+            panel5.Controls.Add(button2);
+            panel5.Location = new Point(0, 202);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(266, 55);
+            panel5.TabIndex = 22;
+            // 
+            // button2
+            // 
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button2.ForeColor = Color.White;
+            button2.Image = (Image)resources.GetObject("button2.Image");
+            button2.ImageAlign = ContentAlignment.MiddleLeft;
+            button2.Location = new Point(-21, -14);
+            button2.Name = "button2";
+            button2.Padding = new Padding(30, 0, 0, 0);
+            button2.Size = new Size(326, 88);
+            button2.TabIndex = 21;
+            button2.Text = "          Stock";
+            button2.TextAlign = ContentAlignment.MiddleLeft;
+            button2.UseVisualStyleBackColor = true;
+            // 
+            // panel6
+            // 
+            panel6.Controls.Add(button3);
+            panel6.Location = new Point(0, 263);
+            panel6.Name = "panel6";
+            panel6.Size = new Size(266, 55);
+            panel6.TabIndex = 22;
+            // 
+            // button3
+            // 
+            button3.FlatStyle = FlatStyle.Flat;
+            button3.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button3.ForeColor = Color.White;
+            button3.Image = (Image)resources.GetObject("button3.Image");
+            button3.ImageAlign = ContentAlignment.MiddleLeft;
+            button3.Location = new Point(-21, -14);
+            button3.Name = "button3";
+            button3.Padding = new Padding(30, 0, 0, 0);
+            button3.Size = new Size(326, 88);
+            button3.TabIndex = 21;
+            button3.Text = "          Employee";
+            button3.TextAlign = ContentAlignment.MiddleLeft;
+            button3.UseVisualStyleBackColor = true;
+            // 
+            // panel7
+            // 
+            panel7.Controls.Add(button4);
+            panel7.Location = new Point(0, 324);
+            panel7.Name = "panel7";
+            panel7.Size = new Size(266, 55);
+            panel7.TabIndex = 22;
+            // 
+            // button4
+            // 
+            button4.FlatStyle = FlatStyle.Flat;
+            button4.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button4.ForeColor = Color.White;
+            button4.Image = (Image)resources.GetObject("button4.Image");
+            button4.ImageAlign = ContentAlignment.MiddleLeft;
+            button4.Location = new Point(-21, -14);
+            button4.Name = "button4";
+            button4.Padding = new Padding(30, 0, 0, 0);
+            button4.Size = new Size(326, 88);
+            button4.TabIndex = 21;
+            button4.Text = "          Billing";
+            button4.TextAlign = ContentAlignment.MiddleLeft;
+            button4.UseVisualStyleBackColor = true;
+            // 
+            // panel8
+            // 
+            panel8.Controls.Add(button5);
+            panel8.Location = new Point(0, 385);
+            panel8.Name = "panel8";
+            panel8.Size = new Size(266, 55);
+            panel8.TabIndex = 22;
+            // 
+            // button5
+            // 
+            button5.FlatStyle = FlatStyle.Flat;
+            button5.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button5.ForeColor = Color.White;
+            button5.Image = (Image)resources.GetObject("button5.Image");
+            button5.ImageAlign = ContentAlignment.MiddleLeft;
+            button5.Location = new Point(-21, -14);
+            button5.Name = "button5";
+            button5.Padding = new Padding(30, 0, 0, 0);
+            button5.Size = new Size(326, 88);
+            button5.TabIndex = 21;
+            button5.Text = "          Analytics";
+            button5.TextAlign = ContentAlignment.MiddleLeft;
+            button5.UseVisualStyleBackColor = true;
+            // 
+            // panel9
+            // 
+            panel9.Controls.Add(button6);
+            panel9.Location = new Point(0, 446);
+            panel9.Name = "panel9";
+            panel9.Size = new Size(266, 55);
+            panel9.TabIndex = 22;
+            // 
+            // button6
+            // 
+            button6.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button6.ForeColor = Color.White;
+            button6.Image = (Image)resources.GetObject("button6.Image");
+            button6.ImageAlign = ContentAlignment.MiddleLeft;
+            button6.Location = new Point(-21, -14);
+            button6.Name = "button6";
+            button6.Padding = new Padding(30, 0, 0, 0);
+            button6.Size = new Size(326, 88);
+            button6.TabIndex = 21;
+            button6.Text = "          Home";
+            button6.TextAlign = ContentAlignment.MiddleLeft;
+            button6.UseVisualStyleBackColor = true;
+            // 
+            // panel10
+            // 
+            panel10.Controls.Add(button7);
+            panel10.Location = new Point(0, 605);
+            panel10.Name = "panel10";
+            panel10.Size = new Size(266, 55);
+            panel10.TabIndex = 22;
+            // 
+            // button7
+            // 
+            button7.FlatStyle = FlatStyle.Flat;
+            button7.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button7.ForeColor = Color.White;
+            button7.Image = (Image)resources.GetObject("button7.Image");
+            button7.ImageAlign = ContentAlignment.MiddleLeft;
+            button7.Location = new Point(-21, -14);
+            button7.Name = "button7";
+            button7.Padding = new Padding(30, 0, 0, 0);
+            button7.Size = new Size(326, 88);
+            button7.TabIndex = 21;
+            button7.Text = "          Logout";
+            button7.TextAlign = ContentAlignment.MiddleLeft;
+            button7.UseVisualStyleBackColor = true;
             // 
             // panel2
             // 
-            panel2.BackColor = Color.Gray;
-            panel2.Controls.Add(label15);
-            panel2.Controls.Add(label14);
-            panel2.Controls.Add(label13);
-            panel2.Controls.Add(label12);
-            panel2.Controls.Add(label11);
-            panel2.Controls.Add(label10);
-            panel2.Controls.Add(label9);
-            panel2.Controls.Add(pictureBox2);
+            panel2.BackColor = Color.FromArgb(35, 40, 45);
+            panel2.Controls.Add(pictureBox1);
             panel2.Controls.Add(label8);
-            panel2.Dock = DockStyle.Left;
-            panel2.Location = new Point(0, 0);
+            panel2.Dock = DockStyle.Top;
+            panel2.Location = new Point(266, 0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(234, 695);
-            panel2.TabIndex = 0;
+            panel2.Size = new Size(1048, 52);
+            panel2.TabIndex = 18;
             // 
-            // label15
+            // label8
             // 
-            label15.AutoSize = true;
-            label15.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label15.Location = new Point(69, 143);
-            label15.Name = "label15";
-            label15.Size = new Size(50, 28);
-            label15.TabIndex = 13;
-            label15.Text = "Cars";
+            label8.AutoSize = true;
+            label8.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label8.ForeColor = Color.Gray;
+            label8.Location = new Point(44, 9);
+            label8.Name = "label8";
+            label8.Size = new Size(131, 32);
+            label8.TabIndex = 5;
+            label8.Text = "Garage HS";
+            // 
+            // panel4
+            // 
+            panel4.Controls.Add(button1);
+            panel4.Location = new Point(0, 141);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(266, 55);
+            panel4.TabIndex = 20;
+            // 
+            // button1
+            // 
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button1.ForeColor = Color.White;
+            button1.Image = (Image)resources.GetObject("button1.Image");
+            button1.ImageAlign = ContentAlignment.MiddleLeft;
+            button1.Location = new Point(-21, -14);
+            button1.Name = "button1";
+            button1.Padding = new Padding(30, 0, 0, 0);
+            button1.Size = new Size(326, 88);
+            button1.TabIndex = 21;
+            button1.Text = "          Cars";
+            button1.TextAlign = ContentAlignment.MiddleLeft;
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // sidebarTimer
+            // 
+            sidebarTimer.Interval = 10;
+            // 
+            // sidebar
+            // 
+            sidebar.BackColor = Color.FromArgb(35, 40, 45);
+            sidebar.Controls.Add(panel10);
+            sidebar.Controls.Add(panel9);
+            sidebar.Controls.Add(panel8);
+            sidebar.Controls.Add(panel7);
+            sidebar.Controls.Add(panel6);
+            sidebar.Controls.Add(panel5);
+            sidebar.Controls.Add(panel1);
+            sidebar.Controls.Add(panel4);
+            sidebar.Dock = DockStyle.Left;
+            sidebar.Location = new Point(0, 0);
+            sidebar.MaximumSize = new Size(266, 692);
+            sidebar.MinimumSize = new Size(65, 692);
+            sidebar.Name = "sidebar";
+            sidebar.Size = new Size(266, 692);
+            sidebar.TabIndex = 17;
             // 
             // Stocks
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1314, 695);
-            Controls.Add(panel1);
+            Controls.Add(panel3);
+            Controls.Add(panel2);
+            Controls.Add(sidebar);
             Name = "Stocks";
             Text = "Stocks";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)CarDGV).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)manuButton).EndInit();
+            panel5.ResumeLayout(false);
+            panel6.ResumeLayout(false);
+            panel7.ResumeLayout(false);
+            panel8.ResumeLayout(false);
+            panel9.ResumeLayout(false);
+            panel10.ResumeLayout(false);
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
+            panel4.ResumeLayout(false);
+            sidebar.ResumeLayout(false);
             ResumeLayout(false);
         }
 
         #endregion
 
-        private Label label10;
-        private Label label9;
-        private Label label8;
-        private DataGridView dataGridView1;
-        private Button button3;
-        private Button button2;
-        private Button button1;
-        private Label label5;
-        private Label label14;
-        private Label label13;
-        private Label label12;
-        private Label label11;
-        private Label label4;
-        private Label label1;
-        private Label label3;
-        private Label label2;
-        private PictureBox pictureBox2;
-        private Panel panel3;
-        private Panel panel1;
         private PictureBox pictureBox1;
+        private Panel panel3;
+        private DataGridView CarDGV;
+        private TextBox OwnerNameTb;
+        private Button DeleteBtn;
+        private TextBox ColorTb;
+        private Button EditBtn;
+        private TextBox CarModelTb;
+        private Button AddBtn;
+        private TextBox CarBrandTb;
+        private DateTimePicker CDate;
+        private TextBox CarNumTb;
+        private Label label1;
+        private Label label2;
+        private Panel panel1;
+        private Label label3;
+        private PictureBox manuButton;
+        private Panel panel5;
+        private Button button2;
+        private Panel panel6;
+        private Button button3;
+        private Panel panel7;
+        private Button button4;
+        private Panel panel8;
+        private Button button5;
+        private Panel panel9;
+        private Button button6;
+        private Panel panel10;
+        private Button button7;
         private Panel panel2;
-        private Label label15;
+        private Label label8;
+        private Panel panel4;
+        private Button button1;
+        private System.Windows.Forms.Timer sidebarTimer;
+        private Panel sidebar;
     }
 }
